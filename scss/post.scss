@@ -1,7 +1,7 @@
 // Post SCSS for the theme.
 // We like our buttons very round.
 .btn {
-  border-radius: 1.078em;
+  border-radius: 0.578em;
   font-family: $font-family-sans-serif;
   font-size: 0.875em;
 }
@@ -39,4 +39,84 @@ body {
 }
 .region-main .card {
     background-color: #fff;
+}
+
+#page-footer {
+    margin-top: 20px;
+    padding: 0 20px 0;
+    border-top: solid 1px #d2d7dc;
+    color: rgb(0,47,95);
+    line-height: 20px;
+    text-align: left;
+    padding-bottom: 10px;
+    background-color: #fff;
+    font-size: 12px;
+}
+#page-footer a, #page-footer a .icon {
+    color: #002f5f;
+}
+#page-footer b {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+#page-footer #course-footer {
+  margin-top: 12px;
+}
+#page-fotter p.helplink {
+  margin-top: 12px;
+}
+#page-footer .container {
+  max-width: 100% !important;
+}
+
+/* Fix login page for musctache template;
+-------------------------*/
+.loginbox .expand .collapsed {
+    cursor: pointer;
+    background-image: url([[pix:theme|collapsed]]);
+    background-position: 2px 50%;
+    background-repeat: no-repeat;
+    margin: auto;
+    max-width: 500px;
+    margin-bottom: 0.5em;
+}
+
+.loginbox .expand .expanded {
+    cursor: pointer;
+    background-image: url([[pix:theme|expanded]]);
+    background-position: 2px 50%;
+    background-repeat: no-repeat;
+    margin: auto;
+    max-width: 500px;
+    margin-bottom: 0.5em;
+}
+
+.loginbox {
+  margin-top: 150px;
+}
+
+.loginbox .noarrow {
+    background-image: none !important;
+    max-width: 600px !important;
+    margin-bottom: 1em !important;
+}
+
+.loginbox p {
+    margin: auto;
+    max-width: 400px;
+}
+
+.loginbox .directlink {
+  cursor: pointer;
+}
+
+.loginbox h2,
+.loginbox h3 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.loginbox .subcontent .create {
+    text-align: left;
+    max-width: 400px;
 }

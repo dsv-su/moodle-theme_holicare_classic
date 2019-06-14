@@ -65,41 +65,35 @@ $THEME->prescsscallback = 'theme_dsv_classic_get_pre_scss';
 $THEME->layouts = [
     // Most backwards compatible layout without the blocks - this is the layout used by default.
     'base' => array(
-        'theme' => 'classic',
         'file' => 'columns.php',
         'regions' => array(),
     ),
     // Standard layout with blocks, this is recommended for most pages with general information.
     'standard' => array(
-        'theme' => 'classic',
         'file' => 'columns.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
     ),
     // Main course page.
     'course' => array(
-        'theme' => 'classic',
         'file' => 'columns.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu' => true),
     ),
     'coursecategory' => array(
-        'theme' => 'classic',
         'file' => 'columns.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
     ),
     // Part of course, typical for modules - default page layout if $cm specified in require_login().
     'incourse' => array(
-        'theme' => 'classic',
         'file' => 'columns.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
     ),
     // The site home page.
     'frontpage' => array(
-        'theme' => 'classic',
         'file' => 'columns.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
@@ -107,14 +101,12 @@ $THEME->layouts = [
     ),
     // Server administration scripts.
     'admin' => array(
-        'theme' => 'classic',
         'file' => 'columns.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
     ),
     // My dashboard page.
     'mydashboard' => array(
-        'theme' => 'classic',
         'file' => 'columns.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
@@ -122,13 +114,11 @@ $THEME->layouts = [
     ),
     // My public page.
     'mypublic' => array(
-        'theme' => 'classic',
         'file' => 'columns.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
     ),
     'login' => array(
-        'theme' => 'boost',
         'file' => 'login.php',
         'regions' => array(),
         'options' => array('langmenu' => true),
@@ -136,14 +126,12 @@ $THEME->layouts = [
  
     // Pages that appear in pop-up windows - no navigation, no blocks, no header.
     'popup' => array(
-        'theme' => 'classic',
         'file' => 'contentonly.php',
         'regions' => array(),
         'options' => array('nofooter' => true, 'nonavbar' => true),
     ),
     // No blocks and minimal footer - used for legacy frame layouts only!
     'frametop' => array(
-        'theme' => 'classic',
         'file' => 'contentonly.php',
         'regions' => array(),
         'options' => array('nofooter' => true, 'nocoursefooter' => true),
@@ -164,7 +152,6 @@ $THEME->layouts = [
     ),
     // Should display the content and basic headers only.
     'print' => array(
-        'theme' => 'classic',
         'file' => 'contentonly.php',
         'regions' => array(),
         'options' => array('nofooter' => true, 'nonavbar' => false),
@@ -177,14 +164,12 @@ $THEME->layouts = [
     ),
     // The pagelayout used for reports.
     'report' => array(
-        'theme' => 'classic',
         'file' => 'columns.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
     ),
     // The pagelayout used for safebrowser and securewindow.
     'secure' => array(
-        'theme' => 'classic',
         'file' => 'secure.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre'

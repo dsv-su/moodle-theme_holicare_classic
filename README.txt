@@ -1,6 +1,3 @@
-This theme is meant to be an example theme for extending Classic.
+A new DSV theme that extends Moodle's standard Classic theme with a bit of customisation.
 
-It comes with maximum comments for all code and shows how to extend and add settings
-to a Classic based theme.
-
-It also looks nice!
+Requires: Boost, Classic, Moodle 3.7.
