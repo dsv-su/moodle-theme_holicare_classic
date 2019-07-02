@@ -70,7 +70,7 @@ body {
 }
 
 /* Fix login page for musctache template;
--------------------------*/
+---------------------------------------*/
 .loginbox .expand .collapsed {
     cursor: pointer;
     background-image: url([[pix:theme|collapsed]]);
@@ -92,7 +92,7 @@ body {
 }
 
 .loginbox {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .loginbox .noarrow {
@@ -104,6 +104,7 @@ body {
 .loginbox p {
     margin: auto;
     max-width: 400px;
+    margin-top: 1em;
 }
 
 .loginbox .directlink {
@@ -119,4 +120,31 @@ body {
 .loginbox .subcontent .create {
     text-align: left;
     max-width: 400px;
+    margin: auto;
+}
+
+.loginbox .subcontent .create form {
+    text-align: center;
+    margin: auto;
+}
+
+
+.loginbox .subcontent .loginsub {
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+.loginbox .subcontent .loginsub form {
+    max-width: 200px;
+    text-aling: left;
+    margin: auto;
+}
+
+.loginbox a.expand {
+    color: rgb(0, 91, 127);
+}
+
+.loginbox a.expand:hover {
+    text-decoration: underline;
 }
