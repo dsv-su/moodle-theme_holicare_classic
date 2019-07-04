@@ -15,7 +15,7 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_classic/header
+    @template theme_dsv_classic/header
 
     This template renders the header.
 
@@ -32,7 +32,7 @@
         <div class="card {{^contextheader}}border-0 bg-transparent{{/contextheader}}">
             <div class="card-body {{^contextheader}}p-2{{/contextheader}}">
                 <div class="d-flex">
-                    <div class="mr-auto">
+                    <div class="mr-auto {{#fulllogo}} contextheader-hidden {{/fulllogo}}">
                     {{{contextheader}}}
                     </div>
                 </div>

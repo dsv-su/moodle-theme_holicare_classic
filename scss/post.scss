@@ -148,3 +148,56 @@ body {
 .loginbox a.expand:hover {
     text-decoration: underline;
 }
+
+/* Navbar 
+*********/
+
+nav.fixed-top {
+    flex-flow: wrap;
+    max-height: 180px;
+}
+
+nav.fixed-top .navbar-container {
+    display: flex;
+    width: 100%;
+}
+
+nav.fixed-top .logo {
+    display: flex;
+}
+
+nav.fixed-top .logo img {
+    max-height: 150px;
+}
+
+#page.bigger-margin {
+    margin-top: 180px;
+}
+
+#full_header_container.hidden {
+    display: none;
+}
+
+#page-content.bigger-margin {
+    margin-top: 1rem;
+}
+
+.contextheader-hidden {
+    display: none;
+}
+
+/* We need to hide logo when navbar is shrinked whith width<768px */
+@media (max-width: 767px) {
+    #page.bigger-margin {
+        margin-top: 50px;
+    }
+    nav.fixed-top .logo {
+        display: none;
+    }
+    #full_header_container.hidden {
+        display: block;
+    }
+    #page-content.bigger-margin {
+        margin-top: 0;
+    }
+}

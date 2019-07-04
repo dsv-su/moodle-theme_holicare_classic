@@ -49,6 +49,22 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
+    // Variable $logo_en.
+    $name = 'theme_dsv_classic/logo_en';
+    $title = get_string('logo_en', 'theme_dsv_classic');
+    $description = get_string('logo_en_desc', 'theme_dsv_classic');
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo_en');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    // Variable $logo_sv.
+    $name = 'theme_dsv_classic/logo_sv';
+    $title = get_string('logo_sv', 'theme_dsv_classic');
+    $description = get_string('logo_sv_desc', 'theme_dsv_classic');
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo_sv');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
     // Must add the page after defining all the settings!
     $settings->add($page);
 

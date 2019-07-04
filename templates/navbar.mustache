@@ -15,7 +15,7 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_classic/navbar
+    @template theme_dsv_classic/navbar
 
     This template renders the top navbar.
 
@@ -37,7 +37,7 @@
     }
 }}
 <nav class="fixed-top navbar navbar-bootswatch navbar-expand moodle-has-zindex">
-
+    <div class="navbar-container">
         <a href="{{{ config.wwwroot }}}" class="navbar-brand {{# output.should_display_navbar_logo }}has-logo{{/ output.should_display_navbar_logo }}
             {{^ output.should_display_navbar_logo }}
                 d-none d-sm-inline
@@ -71,5 +71,7 @@
             </li>
         </ul>
         <!-- search_box -->
+        </div>
+        {{{ fulllogo }}}
 </nav>
 

@@ -30,6 +30,13 @@ $blockspost = $OUTPUT->blocks('side-post');
 
 $hassidepre = $PAGE->blocks->region_has_content('side-pre', $OUTPUT);
 $hassidepost = $PAGE->blocks->region_has_content('side-post', $OUTPUT);
+$sitename = format_string($SITE->fullname, true, array('context' => context_course::instance(SITEID)));
+
+if ($PAGE->pagelayout == 'frontpage' || $PAGE->pagelayout == 'login') {
+	$theme = theme_config::load('dsv_classic');
+	$fulllogo = html_writer::div(html_writer::empty_tag('img', [
+		'src' => $theme->setting_file_url('logo_en', 'logo_en'), 'alt' => $sitename, 'class' => 'img-fluid']), 'logo');
+}
 
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
@@ -38,7 +45,8 @@ $templatecontext = [
     'sidepostblocks' => $blockspost,
     'haspreblocks' => $hassidepre,
     'haspostblocks' => $hassidepost,
-    'bodyattributes' => $bodyattributes
+    'bodyattributes' => $bodyattributes,
+    'fulllogo' => $fulllogo
 ];
 
 echo $OUTPUT->render_from_template('theme_dsv_classic/columns', $templatecontext);

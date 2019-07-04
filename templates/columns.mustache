@@ -56,10 +56,11 @@
 
     {{>theme_dsv_classic/navbar}}
 
-    <div id="page" class="container-fluid">
+    <div id="page" class="container-fluid {{#fulllogo}} bigger-margin {{/fulllogo}} ">
+        <div id="full_header_container" {{#fulllogo}} class="hidden" {{/fulllogo}}>
         {{{ output.full_header }}}
-
-        <div id="page-content" class="row {{#haspreblocks}} blocks-pre {{/haspreblocks}} {{#haspostblocks}} blocks-post {{/haspostblocks}}">
+        </div>
+        <div id="page-content" class="row {{#haspreblocks}} blocks-pre {{/haspreblocks}} {{#haspostblocks}} blocks-post {{/haspostblocks}} {{#fulllogo}} bigger-margin {{/fulllogo}}">
             <div id="region-main-box" class="region-main">
                 {{#hasregionmainsettingsmenu}}
                 <div id="region-main-settings-menu" class="d-print-none {{#hasblocks}}has-blocks{{/hasblocks}}">

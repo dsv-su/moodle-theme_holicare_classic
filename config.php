@@ -96,8 +96,7 @@ $THEME->layouts = [
     'frontpage' => array(
         'file' => 'columns.php',
         'regions' => array('side-pre', 'side-post'),
-        'defaultregion' => 'side-pre',
-        'options' => array('nofullheader' => true),
+        'defaultregion' => 'side-pre'
     ),
     // Server administration scripts.
     'admin' => array(

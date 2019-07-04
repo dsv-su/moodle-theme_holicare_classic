@@ -60,6 +60,10 @@ $string['incoursebackgroundimage_desc'] = 'An image that will be stretched to fi
 $string['loginbackgroundimage'] = 'Login page background image';
 // Background image for login page.
 $string['loginbackgroundimage_desc'] = 'An image that will be stretched to fill the background of the login page.';
+$string['logo_en'] = 'DSV frontpage logo (English)';
+$string['logo_en_desc'] = 'This image will be displayed in navbar on frontpage when English lang is selected';
+$string['logo_sv'] = 'DSV frontpage logo (Swedish)';
+$string['logo_sv_desc'] = 'This image will be displayed in navbar on frontpage when Swedish lang is selected';
 // The name of our plugin.
 $string['navbardark'] = 'Use a dark style navbar';
 $string['navbardarkdesc'] = 'Swaps text and background colours for the navbar at the top of the page between dark and light.';
