@@ -42,6 +42,9 @@ body {
     background-color: #fff;
 }
 
+/* Footer adjustment
+*******************/
+
 #page-footer {
     margin-top: 20px;
     padding: 0 20px 0;
@@ -70,8 +73,9 @@ body {
   max-width: 100% !important;
 }
 
-/* Fix login page for musctache template;
----------------------------------------*/
+/* Fix login page for musctache template
+***************************************/
+
 .loginbox .expand .collapsed {
     cursor: pointer;
     background-image: url([[pix:theme|collapsed]]);
@@ -150,8 +154,8 @@ body {
     text-decoration: underline;
 }
 
-/* Navbar 
-*********/
+/* Navbar positioning
+********************/
 
 nav.fixed-top {
     flex-flow: wrap;
@@ -187,7 +191,28 @@ nav.fixed-top .logo img {
     display: none;
 }
 
-/* We need to hide logo when navbar is shrinked whith width<768px */
+/* Navbar coloring
+*****************/
+
+.navbar-bootswatch {
+    background-color: #002e5f !important;
+}
+
+.navbar-bootswatch a .usertext:hover {
+    color: #fff !important;
+}
+
+.navbar-bootswatch a .usertext {
+    color: rgba(#fff, .75) !important;
+}
+
+.navbar-bootswatch a .icon:hover {
+    color: #fff !important;
+}
+
+/* We need to hide logo when navbar is shrinked whith width<768px
+****************************************************************/
+
 @media (max-width: 767px) {
     #page.bigger-margin {
         margin-top: 50px;
@@ -204,7 +229,7 @@ nav.fixed-top .logo img {
 }
 
 /* Adjust side blocks width
-***************************/
+**************************/
 
 @media (max-width: 1199px) and (min-width: 992px) {
     #page-content.blocks-pre.blocks-post .region-main {
@@ -221,18 +246,9 @@ nav.fixed-top .logo img {
     }
 }
 
-.navbar-bootswatch {
-    background-color: #002e5f !important;
-}
+/* Move messaging drawer up to the front
+***************************************/
 
-.navbar-bootswatch a .usertext:hover {
-    color: #fff !important;
-}
-
-.navbar-bootswatch a .usertext {
-    color: rgba(#fff, .75) !important;
-}
-
-.navbar-bootswatch a .icon:hover {
-    color: #fff !important;
+.message-app.drawer {
+    z-index: 9999;
 }
