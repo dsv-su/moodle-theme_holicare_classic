@@ -220,3 +220,19 @@ nav.fixed-top .logo img {
         max-width: 25%;
     }
 }
+
+.navbar-bootswatch {
+    background-color: #002e5f !important;
+}
+
+.navbar-bootswatch a .usertext:hover {
+    color: #fff !important;
+}
+
+.navbar-bootswatch a .usertext {
+    color: rgba(#fff, .75) !important;
+}
+
+.navbar-bootswatch a .icon:hover {
+    color: #fff !important;
+}

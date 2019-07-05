@@ -145,7 +145,6 @@ $THEME->layouts = [
     // This must not have any blocks, links, or API calls that would lead to database or cache interaction.
     // Please be extremely careful if you are modifying this layout.
     'maintenance' => array(
-        'theme' => 'boost',
         'file' => 'maintenance.php',
         'regions' => array(),
     ),
