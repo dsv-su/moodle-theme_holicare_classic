@@ -45,9 +45,12 @@ $templatecontext = [
     'sidepostblocks' => $blockspost,
     'haspreblocks' => $hassidepre,
     'haspostblocks' => $hassidepost,
-    'bodyattributes' => $bodyattributes,
-    'fulllogo' => $fulllogo
+    'bodyattributes' => $bodyattributes
 ];
+
+if (isset($fulllogo)) {
+    $templatecontext['fulllogo'] = $fulllogo;
+}
 
 echo $OUTPUT->render_from_template('theme_dsv_classic/columns', $templatecontext);
 
