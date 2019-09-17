@@ -252,3 +252,10 @@ nav.fixed-top .logo img {
 .message-app.drawer {
     z-index: 9999;
 }
+
+/* Keep performance info blocks light-backrounded
+************************************************/
+
+.performanceinfo .bg-dark {
+    background-color: #f8f9fa !important;
+}
