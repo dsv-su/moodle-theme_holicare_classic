@@ -231,18 +231,27 @@ nav.fixed-top .logo img {
 /* Adjust side blocks width
 **************************/
 
-@media (max-width: 1199px) and (min-width: 992px) {
+@media (max-width: 1440px) and (min-width: 992px) {
+    #page-content .region-main {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    #page-content.blocks-pre .region-main,
+    #page-content.blocks-post .region-main {
+        flex: 0 0 75% !important;
+        max-width: 75% !important;
+    }
     #page-content.blocks-pre.blocks-post .region-main {
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
     }
     #page-content.blocks-pre .columnleft {
-        flex: 0 0 25%;
-        max-width: 25%;
+        flex: 0 0 25% !important;
+        max-width: 25% !important;
     }
     #page-content.blocks-post .columnright {
-        flex: 0 0 25%;
-        max-width: 25%;
+        flex: 0 0 25% !important;
+        max-width: 25% !important;
     }
 }
 
