@@ -142,7 +142,7 @@ body {
 
 .loginbox .subcontent .loginsub form {
     max-width: 200px;
-    text-aling: left;
+    text-align: left;
     margin: auto;
 }
 
@@ -267,4 +267,12 @@ nav.fixed-top .logo img {
 
 .performanceinfo .bg-dark {
     background-color: #f8f9fa !important;
+}
+
+/* Remove borders in middle region
+*********************************/
+
+#page-content .region-main-content,
+#page-content .region-main .card {
+    border: none;
 }
