@@ -269,10 +269,8 @@ nav.fixed-top .logo img {
     background-color: #f8f9fa !important;
 }
 
-/* Remove borders in middle region
-*********************************/
-
-#page-content .region-main-content,
-#page-content .region-main .card {
-    /*border: none;*/
+/* Align single buttons in alerts
+********************************/
+.confirmation-buttons .text-xs-right {
+    text-align: center;
 }
