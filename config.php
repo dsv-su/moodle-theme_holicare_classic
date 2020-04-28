@@ -122,7 +122,7 @@ $THEME->layouts = [
         'regions' => array(),
         'options' => array('langmenu' => true),
     ),
-
+ 
     // Pages that appear in pop-up windows - no navigation, no blocks, no header.
     'popup' => array(
         'file' => 'contentonly.php',
@@ -175,7 +175,7 @@ $THEME->layouts = [
 ];
 
 // This is the function that returns the SCSS source for the main file in our theme.
-$THEME->scss = function ($theme) {
+$THEME->scss = function($theme) {
     return theme_dsv_classic_get_main_scss_content($theme);
 };
 
