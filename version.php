@@ -45,4 +45,3 @@ $plugin->maturity = MATURITY_STABLE;
 
 // This is the named version.
 $plugin->release = 1.0;
-

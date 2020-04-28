@@ -31,7 +31,8 @@ defined('MOODLE_INTERNAL') || die();
  * @param theme_config $theme The theme config object.
  * @return string All fixed Sass for this theme.
  */
-function theme_dsv_classic_get_main_scss_content($theme) {
+function theme_dsv_classic_get_main_scss_content($theme)
+{
     global $CFG;
 
     $scss = '';
@@ -62,14 +63,17 @@ function theme_dsv_classic_get_main_scss_content($theme) {
  * @param theme_config $theme The theme config object.
  * @return String with Sass variables.
  */
-function theme_dsv_classic_get_pre_scss($theme) {
+function theme_dsv_classic_get_pre_scss($theme)
+{
     // This will be the array to store the Sass variables and values.
     $variables = array();
     $settings = $theme->settings;
 
     // These are all the background images configurable in the theme settings.
-    $backgrounds = array('defaultbackgroundimage', 'loginbackgroundimage', 'frontpagebackgroundimage',
-        'dashboardbackgroundimage', 'incoursebackgroundimage');
+    $backgrounds = array(
+        'defaultbackgroundimage', 'loginbackgroundimage', 'frontpagebackgroundimage',
+        'dashboardbackgroundimage', 'incoursebackgroundimage'
+    );
 
     foreach ($backgrounds as $background) {
         if (!empty($settings->$background)) {
@@ -96,7 +100,8 @@ function theme_dsv_classic_get_pre_scss($theme) {
  * @param theme_config $theme The theme config object.
  * @return string
  */
-function theme_dsv_classic_get_extra_scss($theme) {
+function theme_dsv_classic_get_extra_scss($theme)
+{
     global $CFG;
     $content = '';
 
@@ -125,8 +130,9 @@ function theme_dsv_classic_get_extra_scss($theme) {
  * @param array $options
  * @return bool
  */
-function theme_dsv_classic_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
-    if ($context->contextlevel == CONTEXT_SYSTEM && (strpos($filearea, 'backgroundimage') || strpos($filearea, 'logo') !== false )) {
+function theme_dsv_classic_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array())
+{
+    if ($context->contextlevel == CONTEXT_SYSTEM && (strpos($filearea, 'backgroundimage') || strpos($filearea, 'logo') !== false)) {
         $theme = theme_config::load('dsv_classic');
         // By default, theme files must be cache-able by both browsers and proxies.
         if (!array_key_exists('cacheability', $options)) {

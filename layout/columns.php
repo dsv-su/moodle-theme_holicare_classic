@@ -33,9 +33,10 @@ $hassidepost = $PAGE->blocks->region_has_content('side-post', $OUTPUT);
 $sitename = format_string($SITE->fullname, true, array('context' => context_course::instance(SITEID)));
 
 if ($PAGE->pagelayout == 'frontpage' || $PAGE->pagelayout == 'login') {
-	$theme = theme_config::load('dsv_classic');
-	$fulllogo = html_writer::div(html_writer::empty_tag('img', [
-		'src' => $theme->setting_file_url('logo_en', 'logo_en'), 'alt' => $sitename, 'class' => 'img-fluid']), 'logo');
+    $theme = theme_config::load('dsv_classic');
+    $fulllogo = html_writer::div(html_writer::empty_tag('img', [
+        'src' => $theme->setting_file_url('logo_en', 'logo_en'), 'alt' => $sitename, 'class' => 'img-fluid'
+    ]), 'logo');
 }
 
 $templatecontext = [
@@ -53,4 +54,3 @@ if (isset($fulllogo)) {
 }
 
 echo $OUTPUT->render_from_template('theme_dsv_classic/columns', $templatecontext);
-

@@ -1,10 +1,10 @@
 // Post SCSS for the theme.
 // We like our buttons very round.
 .btn {
-  border-radius: 0.578em;
-  font-family: $font-family-sans-serif;
-  font-size: 0.875em;
-  margin-top: 0.5em;
+    //border-radius: 0.578em;
+    //font-family: $font-family-sans-serif;
+    font-size: 0.875em;
+    //margin-left: 0.5em;
 }
 // Backgrounds everywhere.
 body.pagelayout-login {
@@ -49,14 +49,15 @@ body {
     margin-top: 20px;
     padding: 0 20px 0;
     border-top: solid 1px #d2d7dc;
-    color: rgb(0,47,95);
+    color: rgb(0, 47, 95);
     line-height: 20px;
     text-align: left;
     padding-bottom: 10px;
     background-color: #fff;
     font-size: 12px;
 }
-#page-footer a, #page-footer a .icon {
+#page-footer a,
+#page-footer a .icon {
     color: #002f5f;
 }
 #page-footer b {
@@ -64,13 +65,13 @@ body {
     font-size: 14px;
 }
 #page-footer #course-footer {
-  margin-top: 12px;
+    margin-top: 12px;
 }
 #page-fotter p.helplink {
-  margin-top: 12px;
+    margin-top: 12px;
 }
 #page-footer .container {
-  max-width: 100% !important;
+    max-width: 100% !important;
 }
 
 /* Fix login page for musctache template
@@ -97,7 +98,7 @@ body {
 }
 
 .loginbox {
-  margin-top: 100px;
+    margin-top: 100px;
 }
 
 .loginbox .noarrow {
@@ -113,13 +114,13 @@ body {
 }
 
 .loginbox .directlink {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .loginbox h2,
 .loginbox h3 {
-  text-align: center;
-  margin-bottom: 1em;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 .loginbox .subcontent .create {
@@ -132,7 +133,6 @@ body {
     text-align: center;
     margin: auto;
 }
-
 
 .loginbox .subcontent .loginsub {
     text-align: center;
@@ -203,7 +203,7 @@ nav.fixed-top .logo img {
 }
 
 .navbar-bootswatch a .usertext {
-    color: rgba(#fff, .75) !important;
+    color: rgba(#fff, 0.75) !important;
 }
 
 .navbar-bootswatch a .icon:hover {
