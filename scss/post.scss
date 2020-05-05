@@ -198,15 +198,27 @@ nav.fixed-top .logo img {
     background-color: #002e5f !important;
 }
 
-.navbar-bootswatch a .usertext:hover {
+.navbar-bootswatch span.usertext:hover {
     color: #fff !important;
 }
 
-.navbar-bootswatch a .usertext {
+.navbar-bootswatch span.usertext {
     color: rgba(#fff, 0.75) !important;
 }
 
-.navbar-bootswatch a .icon:hover {
+.navbar-bootswatch span.icon:hover {
+    color: #fff !important;
+}
+
+.popover-region-header-actions i.fa {
+    color: #005b7f !important;
+}
+
+.popover-region-header-actions i.fa:hover {
+    color: rgba(#005b7f, 0.75) !important;
+}
+
+.popover-region .nav-link i.fa:hover {
     color: #fff !important;
 }
 
