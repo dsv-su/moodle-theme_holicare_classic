@@ -190,22 +190,6 @@
                 </div>
             </div>
             <p class="loginbox">* This option should only be used if you are not a registered student with Stockholm University. For help with your university account visit <a href="https://mitt.su.se/">https://mitt.su.se/</a></p>
-
-            {{#hasidentityproviders}}
-                <h6 class="mt-2">{{#str}} potentialidps, auth {{/str}}</h6>
-                <div class="potentialidplist" class="mt-3">
-                    {{#identityproviders}}
-                        <div class="potentialidp">
-                            <a href="{{url}}" title={{#quote}}{{name}}{{/quote}} class="btn btn-secondary btn-block">
-                                {{#iconurl}}
-                                    <img src="{{iconurl}}" alt="" width="24" height="24"/>
-                                {{/iconurl}}
-                                {{name}}
-                            </a>
-                        </div>
-                    {{/identityproviders}}
-                </div>
-            {{/hasidentityproviders}}
         </div>
     </div>
 </div>
