@@ -50,6 +50,7 @@ $templatecontext = [
 
 if (isset($fulllogo)) {
     $templatecontext['fulllogo'] = $fulllogo;
+    $templatecontext['hasfulllogo'] = true;
 }
 
 echo $OUTPUT->render_from_template('theme_dsv_classic/columns', $templatecontext);
