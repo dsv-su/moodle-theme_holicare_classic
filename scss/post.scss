@@ -1,291 +1,303 @@
 // Post SCSS for the theme.
 // We like our buttons very round.
 .btn {
-    //border-radius: 0.578em;
-    //font-family: $font-family-sans-serif;
-    font-size: 0.875em;
-    //margin-top: 0.5em;
+  //border-radius: 0.578em;
+  //font-family: $font-family-sans-serif;
+  font-size: 0.875em;
+  //margin-top: 0.5em;
 }
+
 // Backgrounds everywhere.
 body.pagelayout-login {
-    background-image: $loginbackgroundimage;
-    background-size: cover;
+  background-image: $loginbackgroundimage;
+  background-size: cover;
 }
+
 body.pagelayout-frontpage {
-    background-image: $frontpagebackgroundimage;
-    background-size: cover;
+  background-image: $frontpagebackgroundimage;
+  background-size: cover;
 }
+
 body.pagelayout-mydashboard {
-    background-image: $dashboardbackgroundimage;
-    background-size: cover;
+  background-image: $dashboardbackgroundimage;
+  background-size: cover;
 }
+
 body.pagelayout-course,
 body.pagelayout-incourse {
-    background-image: $incoursebackgroundimage;
-    background-size: cover;
+  background-image: $incoursebackgroundimage;
+  background-size: cover;
 }
+
 body.pagelayout-embedded,
 body.pagelayout-popup,
 body.pagelayout-secure,
 body.pagelayout-print {
-    background-image: none;
+  background-image: none;
 }
+
 body {
-    background-image: $defaultbackgroundimage;
-    background-size: cover;
+  background-image: $defaultbackgroundimage;
+  background-size: cover;
 }
 
 .blockcolumn .card {
-    border-top: 2px solid #e17e33;
+  border-top: 2px solid #e17e33;
 }
+
 .region-main .card {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 /* Footer adjustment
 *******************/
 
 #page-footer {
-    margin-top: 20px;
-    padding: 0 20px 0;
-    border-top: solid 1px #d2d7dc;
-    color: rgb(0, 47, 95);
-    line-height: 20px;
-    text-align: left;
-    padding-bottom: 10px;
-    background-color: #fff;
-    font-size: 12px;
+  margin-top: 20px;
+  padding: 0 20px 0;
+  border-top: solid 1px #d2d7dc;
+  color: rgb(0, 47, 95);
+  line-height: 20px;
+  text-align: left;
+  padding-bottom: 10px;
+  background-color: #fff;
+  font-size: 12px;
 }
+
 #page-footer a,
 #page-footer a .icon {
-    color: #002f5f;
+  color: #002f5f;
 }
+
 #page-footer b {
-    margin-bottom: 12px;
-    font-size: 14px;
+  margin-bottom: 12px;
+  font-size: 14px;
 }
+
 #page-footer #course-footer {
-    margin-top: 12px;
+  margin-top: 12px;
 }
+
 #page-fotter p.helplink {
-    margin-top: 12px;
+  margin-top: 12px;
 }
+
 #page-footer .container {
-    max-width: 100% !important;
+  max-width: 100% !important;
 }
 
 /* Fix login page for musctache template
 ***************************************/
 
 .loginbox .expand .collapsed {
-    cursor: pointer;
-    background-image: url([[pix:theme|collapsed]]);
-    background-position: 2px 50%;
-    background-repeat: no-repeat;
-    margin: auto;
-    max-width: 500px;
-    margin-bottom: 0.5em;
+  cursor: pointer;
+  background-image: url([[pix:theme|collapsed]]);
+  background-position: 2px 50%;
+  background-repeat: no-repeat;
+  margin: auto;
+  max-width: 500px;
+  margin-bottom: 0.5em;
 }
 
 .loginbox .expand .expanded {
-    cursor: pointer;
-    background-image: url([[pix:theme|expanded]]);
-    background-position: 2px 50%;
-    background-repeat: no-repeat;
-    margin: auto;
-    max-width: 500px;
-    margin-bottom: 0.5em;
+  cursor: pointer;
+  background-image: url([[pix:theme|expanded]]);
+  background-position: 2px 50%;
+  background-repeat: no-repeat;
+  margin: auto;
+  max-width: 500px;
+  margin-bottom: 0.5em;
 }
 
 .loginbox {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .loginbox .noarrow {
-    background-image: none !important;
-    max-width: 600px !important;
-    margin-bottom: 1em !important;
+  background-image: none !important;
+  max-width: 600px !important;
+  margin-bottom: 1em !important;
 }
 
 .loginbox p {
-    margin: auto;
-    max-width: 400px;
-    margin-top: 1em;
+  margin: auto;
+  max-width: 400px;
+  margin-top: 1em;
 }
 
 .loginbox .directlink {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .loginbox h2,
 .loginbox h3 {
-    text-align: center;
-    margin-bottom: 1em;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .loginbox .subcontent .create {
-    text-align: left;
-    max-width: 400px;
-    margin: auto;
+  text-align: left;
+  max-width: 400px;
+  margin: auto;
 }
 
 .loginbox .subcontent .create form {
-    text-align: center;
-    margin: auto;
+  text-align: center;
+  margin: auto;
 }
 
 .loginbox .subcontent .loginsub {
-    text-align: center;
-    max-width: 400px;
-    margin: auto;
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
 }
 
 .loginbox .subcontent .loginsub form {
-    max-width: 200px;
-    text-align: left;
-    margin: auto;
+  max-width: 200px;
+  text-align: left;
+  margin: auto;
 }
 
 .loginbox a.expand {
-    color: rgb(0, 91, 127);
+  color: rgb(0, 91, 127);
 }
 
 .loginbox a.expand:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Navbar positioning
 ********************/
 
 nav.fixed-top {
-    flex-flow: wrap;
-    max-height: 180px;
+  flex-flow: wrap;
+  max-height: 180px;
 }
 
 nav.fixed-top .navbar-container {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 nav.fixed-top .logo {
-    display: flex;
+  display: flex;
 }
 
 nav.fixed-top .logo img {
-    max-height: 150px;
+  max-height: 150px;
 }
 
 #page.bigger-margin {
-    margin-top: 180px;
+  margin-top: 180px;
 }
 
 #full_header_container.hidden {
-    display: none;
+  display: none;
 }
 
 #page-content.bigger-margin {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .contextheader-hidden {
-    display: none;
+  display: none;
 }
 
 /* Navbar coloring
 *****************/
 
 .navbar-bootswatch {
-    background-color: #002e5f !important;
+  background-color: #002e5f !important;
 }
 
 .navbar-bootswatch span.usertext:hover {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 .navbar-bootswatch span.usertext {
-    color: rgba(#fff, 0.75) !important;
+  color: rgba(#fff, 0.75) !important;
 }
 
 .navbar-bootswatch span.icon:hover {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 .popover-region-header-actions i.fa {
-    color: #005b7f !important;
+  color: #005b7f !important;
 }
 
 .popover-region-header-actions i.fa:hover {
-    color: rgba(#005b7f, 0.75) !important;
+  color: rgba(#005b7f, 0.75) !important;
 }
 
 .popover-region .nav-link i.fa:hover {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 /* We need to hide logo when navbar is shrinked whith width<768px
 ****************************************************************/
 
 @media (max-width: 767px) {
-    #page.bigger-margin {
-        margin-top: 50px;
-    }
-    nav.fixed-top .logo {
-        display: none;
-    }
-    #full_header_container.hidden {
-        display: block;
-    }
-    #page-content.bigger-margin {
-        margin-top: 0;
-    }
+  #page.bigger-margin {
+    margin-top: 50px;
+  }
+  nav.fixed-top .logo {
+    display: none;
+  }
+  #full_header_container.hidden {
+    display: block;
+  }
+  #page-content.bigger-margin {
+    margin-top: 0;
+  }
 }
 
 /* Adjust side blocks width
 **************************/
 
 @media (max-width: 1440px) and (min-width: 992px) {
-    #page-content .region-main {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-    }
-    #page-content.blocks-pre .region-main,
-    #page-content.blocks-post .region-main {
-        flex: 0 0 75% !important;
-        max-width: 75% !important;
-    }
-    #page-content.blocks-pre.blocks-post .region-main {
-        flex: 0 0 50% !important;
-        max-width: 50% !important;
-    }
-    #page-content.blocks-pre .columnleft {
-        flex: 0 0 25% !important;
-        max-width: 25% !important;
-    }
-    #page-content.blocks-post .columnright {
-        flex: 0 0 25% !important;
-        max-width: 25% !important;
-    }
+  #page-content .region-main {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  #page-content.blocks-pre .region-main,
+  #page-content.blocks-post .region-main {
+    flex: 0 0 75% !important;
+    max-width: 75% !important;
+  }
+  #page-content.blocks-pre.blocks-post .region-main {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+  #page-content.blocks-pre .columnleft {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+  }
+  #page-content.blocks-post .columnright {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+  }
 }
 
 /* Move messaging drawer up to the front
 ***************************************/
 
 .message-app.drawer {
-    z-index: 9999;
+  z-index: 9999;
 }
 
 /* Keep performance info blocks light-backrounded
 ************************************************/
 
 .performanceinfo .bg-dark {
-    background-color: #f8f9fa !important;
+  background-color: #f8f9fa !important;
 }
 
 /* Align single buttons in alerts
 ********************************/
 
 .confirmation-buttons.text-xs-right {
-    text-align: center;
+  text-align: center;
 }
 
 /* Fix display for code formatter
@@ -293,16 +305,23 @@ nav.fixed-top .logo img {
 
 .php,
 .java {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* Make <pre> tags word-break
 ****************************/
 
 pre {
-    white-space: pre-wrap; /* css-3 */
-    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-    white-space: -pre-wrap; /* Opera 4-6 */
-    white-space: -o-pre-wrap; /* Opera 7 */
-    word-wrap: break-word; /* Internet Explorer 5.5+ */
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+/* User list vertical align
+**************************/
+
+.userlist table#participants th {
+  vertical-align: middle;
 }
