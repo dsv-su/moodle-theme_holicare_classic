@@ -45,7 +45,7 @@ $string['dashboardbackgroundimage_desc'] = 'An image that will be stretched to f
 $string['defaultbackgroundimage'] = 'Default page background image';
 // Background image for default page.
 $string['defaultbackgroundimage_desc'] = 'An image that will be stretched to fill the background of all pages without a more specific background image.';
-$string['footer'] = '<p><b>Department of Computer and Systems Sciences, DSV</b><br>Stockholm University, DSV, Postbox 7003, SE-164 07 Kista, Sweden | Phone: <a href="callto:+468162000">+46 8 16 20 00</a></p>';
+$string['footer'] = '<p><b>Institutionen för data- och systemvetenskap, DSV</b><br>Stockholms universitet, DSV, Postbox 7003, 164 07 Kista | Telefon: <a href="callto:+468162000">08-16 20 00</a></p>';
 // Background image for front page.
 $string['frontpagebackgroundimage'] = 'Front page background image';
 // Background image for front page.
