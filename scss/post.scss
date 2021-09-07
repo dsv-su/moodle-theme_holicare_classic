@@ -341,3 +341,10 @@ pre {
 .que .answer .answernumber {
   min-width: 1.5em;
 }
+
+/* Disable dragging for course info
+ *********************************/
+
+.block_course_info .moodle-core-dragdrop-draghandle {
+  display: none;
+}
