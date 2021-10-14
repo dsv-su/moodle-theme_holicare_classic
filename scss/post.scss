@@ -346,6 +346,12 @@ pre {
   min-width: 1.5em;
 }
 
+/* Remove multichoice scrollbar when a choice is made
+****************************************************/
+.qtype_multichoice_clearchoice .mb-n1 {
+  margin-bottom: 5px !important;
+}
+
 /* Disable dragging for course info
  *********************************/
 
