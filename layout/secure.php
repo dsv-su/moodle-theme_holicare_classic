@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * A secure layout for the classic theme.
+ * A secure layout for the DSV classic theme.
  *
- * @package   theme_classic
+ * @package   theme_dsv_classic
  * @copyright 2018 Bas Brands
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -39,8 +39,10 @@ $templatecontext = [
     'sidepostblocks' => $blockspost,
     'haspreblocks' => $hassidepre,
     'haspostblocks' => $hassidepost,
-    'bodyattributes' => $bodyattributes
+    'bodyattributes' => $bodyattributes,
+    'fullname' => fullname($USER),
+    'username' => $USER->username
 ];
 
-echo $OUTPUT->render_from_template('theme_classic/secure', $templatecontext);
+echo $OUTPUT->render_from_template('theme_dsv_classic/secure', $templatecontext);
 
