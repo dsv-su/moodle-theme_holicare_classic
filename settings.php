@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package   theme_dsv_classic
+ * @package   theme_holicare_classic
  * @copyright 2016 Damyon Wiese
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -28,39 +28,39 @@ defined('MOODLE_INTERNAL') || die();
 if ($ADMIN->fulltree) {
 
     // Boost provides a nice setting page which splits settings onto separate tabs. We want to use it here.
-    $settings = new theme_boost_admin_settingspage_tabs('themesettingdsv_classic', get_string('configtitle', 'theme_dsv_classic'));
+    $settings = new theme_boost_admin_settingspage_tabs('themesettingholicare_classic', get_string('configtitle', 'theme_holicare_classic'));
 
     // Each page is a tab - the first is the "General" tab.
-    $page = new admin_settingpage('theme_dsv_classic_general', get_string('generalsettings', 'theme_dsv_classic'));
+    $page = new admin_settingpage('theme_holicare_classic_general', get_string('generalsettings', 'theme_holicare_classic'));
 
-    $name = 'theme_dsv_classic/navbardark';
-    $title = get_string('navbardark', 'theme_dsv_classic');
-    $description = get_string('navbardarkdesc', 'theme_dsv_classic');
+    $name = 'theme_holicare_classic/navbardark';
+    $title = get_string('navbardark', 'theme_holicare_classic');
+    $description = get_string('navbardarkdesc', 'theme_holicare_classic');
     $setting = new admin_setting_configcheckbox($name, $title, $description, 0);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // Variable $brand-color.
     // We use an empty default value because the default colour should come from the preset.
-    $name = 'theme_dsv_classic/brandcolor';
-    $title = get_string('brandcolor', 'theme_dsv_classic');
-    $description = get_string('brandcolor_desc', 'theme_dsv_classic');
+    $name = 'theme_holicare_classic/brandcolor';
+    $title = get_string('brandcolor', 'theme_holicare_classic');
+    $description = get_string('brandcolor_desc', 'theme_holicare_classic');
     $setting = new admin_setting_configcolourpicker($name, $title, $description, '');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // Variable $logo_en.
-    $name = 'theme_dsv_classic/logo_en';
-    $title = get_string('logo_en', 'theme_dsv_classic');
-    $description = get_string('logo_en_desc', 'theme_dsv_classic');
+    $name = 'theme_holicare_classic/logo_en';
+    $title = get_string('logo_en', 'theme_holicare_classic');
+    $description = get_string('logo_en_desc', 'theme_holicare_classic');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo_en');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // Variable $logo_sv.
-    $name = 'theme_dsv_classic/logo_sv';
-    $title = get_string('logo_sv', 'theme_dsv_classic');
-    $description = get_string('logo_sv_desc', 'theme_dsv_classic');
+    $name = 'theme_holicare_classic/logo_sv';
+    $title = get_string('logo_sv', 'theme_holicare_classic');
+    $description = get_string('logo_sv_desc', 'theme_holicare_classic');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo_sv');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -69,13 +69,13 @@ if ($ADMIN->fulltree) {
     $settings->add($page);
 
     // Each page is a tab - the second is the "Backgrounds" tab.
-    $page = new admin_settingpage('theme_dsv_classic_backgrounds', get_string('backgrounds', 'theme_dsv_classic'));
+    $page = new admin_settingpage('theme_holicare_classic_backgrounds', get_string('backgrounds', 'theme_holicare_classic'));
 
     // Default background setting.
     // We use variables for readability.
-    $name = 'theme_dsv_classic/defaultbackgroundimage';
-    $title = get_string('defaultbackgroundimage', 'theme_dsv_classic');
-    $description = get_string('defaultbackgroundimage_desc', 'theme_dsv_classic');
+    $name = 'theme_holicare_classic/defaultbackgroundimage';
+    $title = get_string('defaultbackgroundimage', 'theme_holicare_classic');
+    $description = get_string('defaultbackgroundimage_desc', 'theme_holicare_classic');
     // This creates the new setting.
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'defaultbackgroundimage');
     $setting->set_updatedcallback('theme_reset_all_caches');
@@ -84,9 +84,9 @@ if ($ADMIN->fulltree) {
 
     // Login page background setting.
     // We use variables for readability.
-    $name = 'theme_dsv_classic/loginbackgroundimage';
-    $title = get_string('loginbackgroundimage', 'theme_dsv_classic');
-    $description = get_string('loginbackgroundimage_desc', 'theme_dsv_classic');
+    $name = 'theme_holicare_classic/loginbackgroundimage';
+    $title = get_string('loginbackgroundimage', 'theme_holicare_classic');
+    $description = get_string('loginbackgroundimage_desc', 'theme_holicare_classic');
     // This creates the new setting.
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginbackgroundimage');
     $setting->set_updatedcallback('theme_reset_all_caches');
@@ -95,9 +95,9 @@ if ($ADMIN->fulltree) {
 
     // Frontpage page background setting.
     // We use variables for readability.
-    $name = 'theme_dsv_classic/frontpagebackgroundimage';
-    $title = get_string('frontpagebackgroundimage', 'theme_dsv_classic');
-    $description = get_string('frontpagebackgroundimage_desc', 'theme_dsv_classic');
+    $name = 'theme_holicare_classic/frontpagebackgroundimage';
+    $title = get_string('frontpagebackgroundimage', 'theme_holicare_classic');
+    $description = get_string('frontpagebackgroundimage_desc', 'theme_holicare_classic');
     // This creates the new setting.
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'frontpagebackgroundimage');
     $setting->set_updatedcallback('theme_reset_all_caches');
@@ -106,9 +106,9 @@ if ($ADMIN->fulltree) {
 
     // Dashboard page background setting.
     // We use variables for readability.
-    $name = 'theme_dsv_classic/dashboardbackgroundimage';
-    $title = get_string('dashboardbackgroundimage', 'theme_dsv_classic');
-    $description = get_string('dashboardbackgroundimage_desc', 'theme_dsv_classic');
+    $name = 'theme_holicare_classic/dashboardbackgroundimage';
+    $title = get_string('dashboardbackgroundimage', 'theme_holicare_classic');
+    $description = get_string('dashboardbackgroundimage_desc', 'theme_holicare_classic');
     // This creates the new setting.
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'dashboardbackgroundimage');
     $setting->set_updatedcallback('theme_reset_all_caches');
@@ -117,9 +117,9 @@ if ($ADMIN->fulltree) {
 
     // In course page background setting.
     // We use variables for readability.
-    $name = 'theme_dsv_classic/incoursebackgroundimage';
-    $title = get_string('incoursebackgroundimage', 'theme_dsv_classic');
-    $description = get_string('incoursebackgroundimage_desc', 'theme_dsv_classic');
+    $name = 'theme_holicare_classic/incoursebackgroundimage';
+    $title = get_string('incoursebackgroundimage', 'theme_holicare_classic');
+    $description = get_string('incoursebackgroundimage_desc', 'theme_holicare_classic');
     // This creates the new setting.
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'incoursebackgroundimage');
     $setting->set_updatedcallback('theme_reset_all_caches');

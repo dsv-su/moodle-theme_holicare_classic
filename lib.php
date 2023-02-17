@@ -17,7 +17,7 @@
 /**
  * Photo backgrounds callbacks.
  *
- * @package    theme_dsv_classic
+ * @package    theme_holicare_classic
  * @copyright  2016 Damyon Wiese
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -31,7 +31,7 @@ defined('MOODLE_INTERNAL') || die();
  * @param theme_config $theme The theme config object.
  * @return string All fixed Sass for this theme.
  */
-function theme_dsv_classic_get_main_scss_content($theme) {
+function theme_holicare_classic_get_main_scss_content($theme) {
     global $CFG;
 
     $scss = '';
@@ -44,10 +44,10 @@ function theme_dsv_classic_get_main_scss_content($theme) {
     $scss .= file_get_contents($CFG->dirroot . '/theme/classic/scss/classic/post.scss');
 
     // Pre CSS - this is loaded AFTER any prescss from the setting but before the main scss.
-    $pre = file_get_contents($CFG->dirroot . '/theme/dsv_classic/scss/pre.scss');
+    $pre = file_get_contents($CFG->dirroot . '/theme/holicare_classic/scss/pre.scss');
 
     // Post CSS - this is loaded AFTER the main scss but before the extra scss from the setting.
-    $post = file_get_contents($CFG->dirroot . '/theme/dsv_classic/scss/post.scss');
+    $post = file_get_contents($CFG->dirroot . '/theme/holicare_classic/scss/post.scss');
 
     // Combine them together.
     return $pre . "\n" . $scss . "\n" . $post;
@@ -62,7 +62,7 @@ function theme_dsv_classic_get_main_scss_content($theme) {
  * @param theme_config $theme The theme config object.
  * @return String with Sass variables.
  */
-function theme_dsv_classic_get_pre_scss($theme) {
+function theme_holicare_classic_get_pre_scss($theme) {
     // This will be the array to store the Sass variables and values.
     $variables = array();
     $settings = $theme->settings;
@@ -96,7 +96,7 @@ function theme_dsv_classic_get_pre_scss($theme) {
  * @param theme_config $theme The theme config object.
  * @return string
  */
-function theme_dsv_classic_get_extra_scss($theme) {
+function theme_holicare_classic_get_extra_scss($theme) {
     global $CFG;
     $content = '';
 
@@ -125,7 +125,7 @@ function theme_dsv_classic_get_extra_scss($theme) {
  * @param array $options
  * @return bool
  */
-function theme_dsv_classic_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+function theme_holicare_classic_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     if ($context->contextlevel == CONTEXT_SYSTEM && (strpos($filearea, 'backgroundimage') || strpos($filearea, 'logo') !== false )) {
         $theme = theme_config::load('dsv_classic');
         // By default, theme files must be cache-able by both browsers and proxies.

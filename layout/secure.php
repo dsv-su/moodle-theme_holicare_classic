@@ -17,7 +17,7 @@
 /**
  * A secure layout for the DSV classic theme.
  *
- * @package   theme_dsv_classic
+ * @package   theme_holicare_classic
  * @copyright 2018 Bas Brands
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -44,5 +44,5 @@ $templatecontext = [
     'username' => $USER->username
 ];
 
-echo $OUTPUT->render_from_template('theme_dsv_classic/secure', $templatecontext);
+echo $OUTPUT->render_from_template('theme_holicare_classic/secure', $templatecontext);
 

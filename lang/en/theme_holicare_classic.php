@@ -17,8 +17,8 @@
 /**
  * Language file.
  *
- * @package   theme_dsv_classic
- * @copyright 2016 Damyon Wiese
+ * @package   theme_holicare_boost
+ * @copyright 2023 Ryan Dias
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -34,9 +34,9 @@ $string['brandcolor'] = 'Brand colour';
 // The brand colour setting description.
 $string['brandcolor_desc'] = 'The accent colour.';
 // A description shown in the admin theme selector.
-$string['choosereadme'] = 'Theme DSV Classic is a child theme of the Classic. It adds the ability to upload background photos.';
+$string['choosereadme'] = 'Theme Holicare Classic is a child theme of the Classic. It adds the ability to upload background photos.';
 // Name of the settings pages.
-$string['configtitle'] = 'DSV Classic settings';
+$string['configtitle'] = 'Holicare Classic settings';
 // Background image for dashboard page.
 $string['dashboardbackgroundimage'] = 'Dashboard page background image';
 // Background image for dashboard page.
@@ -45,7 +45,7 @@ $string['dashboardbackgroundimage_desc'] = 'An image that will be stretched to f
 $string['defaultbackgroundimage'] = 'Default page background image';
 // Background image for default page.
 $string['defaultbackgroundimage_desc'] = 'An image that will be stretched to fill the background of all pages without a more specific background image.';
-$string['footer'] = '<p><b>Institutionen för data- och systemvetenskap, DSV</b><br>Stockholms universitet, DSV, Postbox 7003, 164 07 Kista | Telefon: <a href="callto:+468162000">08-16 20 00</a></p>';
+$string['footer'] = '<p><b>Department of Computer and Systems Sciences, DSV</b><br>Stockholm University, DSV, Postbox 7003, SE-164 07 Kista, Sweden | Phone: <a href="callto:+468162000">+46 8 16 20 00</a></p>';
 // Background image for front page.
 $string['frontpagebackgroundimage'] = 'Front page background image';
 // Background image for front page.
@@ -60,14 +60,14 @@ $string['incoursebackgroundimage_desc'] = 'An image that will be stretched to fi
 $string['loginbackgroundimage'] = 'Login page background image';
 // Background image for login page.
 $string['loginbackgroundimage_desc'] = 'An image that will be stretched to fill the background of the login page.';
-$string['logo_en'] = 'DSV frontpage logo (English)';
+$string['logo_en'] = 'Holicare frontpage logo (English)';
 $string['logo_en_desc'] = 'This image will be displayed in navbar on frontpage when English lang is selected';
-$string['logo_sv'] = 'DSV frontpage logo (Swedish)';
+$string['logo_sv'] = 'Holicare frontpage logo (Swedish)';
 $string['logo_sv_desc'] = 'This image will be displayed in navbar on frontpage when Swedish lang is selected';
 // The name of our plugin.
 $string['navbardark'] = 'Use a dark style navbar';
 $string['navbardarkdesc'] = 'Swaps text and background colours for the navbar at the top of the page between dark and light.';
-$string['pluginname'] = 'DSV Classic';
+$string['pluginname'] = 'Holicare Classic';
 // We need to include a lang string for each block region.
 $string['region-side-pre'] = 'Left';
 $string['region-side-post'] = 'Right';

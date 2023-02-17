@@ -17,7 +17,7 @@
 /**
  * Picture backgrounds.
  *
- * @package    theme_dsv_classic
+ * @package    theme_holicare_classic
  * @copyright  2016 Damyon Wiese
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 // This is the version of the plugin.
-$plugin->version = 2019030410;
+$plugin->version = 2023021701;
 
 // This is the version of Moodle this plugin requires.
 $plugin->requires = 2018051700;
 
 // This is the component name of the plugin - it always starts with 'theme_'
 // for themes and should be the same as the name of the folder.
-$plugin->component = 'theme_dsv_classic';
+$plugin->component = 'theme_holicare_classic';
 
 // This is a list of plugins, this plugin depends on (and their versions).
 $plugin->dependencies = [

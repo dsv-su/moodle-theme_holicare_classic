@@ -93,90 +93,83 @@
     }
 }}
 
-<div class="my-1 my-sm-5"></div>
+
 <div class="row justify-content-center">
-    <div class="col-xl-6 col-sm-8 ">
-        <div class="loginbox clearfix onecolumn">
+    <div class="col-xl-10 col-sm-10">
+        <div class="loginbox clearfix">
             <div class="loginpanel">
-                <a class="directlink" href = "{{shibbolethauth}}"><div><h2 class ="collapsed">Log in with your Stockholm University account</h2></div></a>
-                {{#cansignup}}
-                    <div class="sr-only">
-                        <a href="{{signupurl}}">{{#str}} tocreatenewaccount {{/str}}</a>
-                    </div>
-                {{/cansignup}}
-
-                <a class="directlink expand"><div><h2 class="collapsed noarrow">Don't have a Stockholm University account?*</h2></div></a>
-
-                <div class="subcontent separateaccount">
-                    <a class="expand"><div><h3 class="collapsed">Log in with a local Moodle account</h3></div></a>
-                    <div class="subcontent loginsub">
-                    {{#error}}
-                        <div class="loginerrors mt-3">
-                            <a href="#" id="loginerrormessage" class="accesshide">{{error}}</a>
-                            <div class="alert alert-danger" role="alert" data-aria-autofocus="true">{{error}}</div>
+                <div class="page-wrapper">
+                    <div class="text-pane">
+                        <div class="container">
+                            <h1 class="text-pane-h1">HoliCare</h1>
+                            <img src="{{{holicare}}}" class="holicare-logo" alt="HoliCare">
+                            <!-- <h2>e-Learning for professionals</h2> -->
+                            <p class="description">HoliCare is a holistic approach to Lower respiratory tract infections (LRTIs) screening, such as COVID-19. HoliCare will focus on diagnostics while furthering research on LRTIs in sub-Saharan Africa.</p>
+                            <ul>
+                                <li>Co-design with end users</li>
+                                <li>Engage with stakeholders</li>
+                                <li>Technical training of personnel</li>
+                                <li>Transfer of know-how in building research knowledge about point of care, diagnostic workflows, and optimised digital solutions.</li>
+                            </ul>
                         </div>
-                    {{/error}}
-                        <form class="mt-3" action="{{loginurl}}" method="post" id="login">
+                    </div>
+                    <div class="login-pane">
+                        <div class="container">
+                            <h2 class="log-in">Welcome Back!</h2>
+                            {{!
+                            <span class="not-yet">
+                                <p class="no-account">Don't have an account yet?</p>
+                                <a class="login" href="">Sign up</a>
+                            </span>
+                            }}
+                            <form action="{{loginurl}}" method="post" id="login">
                             <input id="anchor" type="hidden" name="anchor" value="">
                             <script>document.getElementById('anchor').value = location.hash;</script>
                             <input type="hidden" name="logintoken" value="{{logintoken}}">
-                            <div class="form-group">
-                                <label for="username" class="sr-only">
-                                    {{^canloginbyemail}}
-                                        {{#str}} username {{/str}}
-                                    {{/canloginbyemail}}
-                                    {{#canloginbyemail}}
-                                        {{#str}} usernameemail {{/str}}
-                                    {{/canloginbyemail}}
-                                </label>
-                                <input type="text" name="username" id="username"
-                                    class="form-control"
-                                    value="{{username}}"
-                                    placeholder={{#quote}}{{^canloginbyemail}}{{#str}}username{{/str}}{{/canloginbyemail}}{{#canloginbyemail}}{{#str}}usernameemail{{/str}}{{/canloginbyemail}}{{/quote}}
-                                    autocomplete="username">
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="sr-only">{{#str}} password {{/str}}</label>
-                                <input type="password" name="password" id="password" value=""
-                                    class="form-control"
-                                    placeholder={{#quote}}{{#str}}password{{/str}}{{/quote}}
-                                    autocomplete="current-password">
-                            </div>
-                            {{#rememberusername}}
-                                <div class="rememberpass mt-3">
-                                    <input type="checkbox" name="rememberusername" id="rememberusername" value="1" {{#username}}checked="checked"{{/username}} />
-                                    <label for="rememberusername">{{#str}} rememberusername, admin {{/str}}</label>
-                                </div>
-                            {{/rememberusername}}
+                                <fieldset>
+                                    <legend>Log in to HoliCare</legend>
+                                    <label for="user">Username:</label>
+                                     <input type="text" name="username" id="username"
+                                        class="form-control" value="{{username}}"
+                                        placeholder={{#quote}}
+                                        {{^canloginbyemail}}
+                                        {{#str}}username{{/str}}
+                                        {{/canloginbyemail}}
+                                        {{#canloginbyemail}}{{#str}}usernameemail{{/str}}
+                                        {{/canloginbyemail}}{{/quote}}
+                                        autocomplete="username">
 
-                            <button type="submit" class="btn btn-primary btn-block mt-3" id="loginbtn">{{#str}}login{{/str}}</button>
-                        </form>
+                                    <label for="password">Password:</label>
+                                    <input type="password" name="password" id="password" value=""
+                                        class="form-control"
+                                        placeholder={{#quote}}{{#str}}password{{/str}}{{/quote}}
+                                        autocomplete="current-password">
 
-                        <div class="forgetpass mt-3">
-                            <p><a href="{{forgotpasswordurl}}">{{#str}}forgotten{{/str}}</a></p>
+                                    <span class="forgot-span">
+                                        <input type="checkbox" name="rememberusername" id="rememberusername" value="1" {{#username}}checked="checked"{{/username}} />
+                                        <label for="keep_logged_in" id="keep-label">Keep me logged in</label>
+                                        <a class="login" href="{{forgotpasswordurl}}">{{#str}}forgotten{{/str}}</a>
+                                    </span>
+
+                                    <label for="login">
+                                        <button type="submit" class="btn btn-primary btn-block mt-3" id="loginbtn">{{#str}}login{{/str}}</button>
+                                    </label>
+                                </fieldset>
+                            </form>
                         </div>
+                    </div>
+                </div>
 
+                <div class="subcontent separateaccount">
                         <div class="mt-3">
                             {{#str}} cookiesenabled {{/str}}
                             {{{cookieshelpiconformatted}}}
                         </div>
-
-                        {{#canloginasguest}}
-                            <div class="mt-2">
-                                <p>{{#str}}someallowguest{{/str}}</p>
-                                <form action="{{loginurl}}" method="post" id="guestlogin">
-                                    <input type="hidden" name="logintoken" value="{{logintoken}}">
-                                    <input type="hidden" name="username" value="guest" />
-                                    <input type="hidden" name="password" value="guest" />
-                                    <button class="btn btn-secondary btn-block" type="submit">{{#str}}loginguest{{/str}}</button>
-                                </form>
-                            </div>
-                        {{/canloginasguest}}
-                    </div>
+                </div>
 
                 {{#hasinstructions}}
                     <div class="signuppanel my-3">
-                        <a class="expand"><div><h3 class ="collapsed">Create a local Moodle account</h3></div></a>
+                        <a class="expand login"><div><h3 class ="collapsed">Create a local Moodle account</h3></div></a>
                         <div class="subcontent create">
                             {{{instructions}}}
                             {{#cansignup}}
@@ -189,7 +182,7 @@
                 {{/hasinstructions}}
                 </div>
             </div>
-            <p class="loginbox">* This option should only be used if you are not a registered student with Stockholm University. For help with your university account visit <a href="https://mitt.su.se/">https://mitt.su.se/</a></p>
+
         </div>
     </div>
 </div>

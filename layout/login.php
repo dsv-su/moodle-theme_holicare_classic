@@ -17,9 +17,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * A login page layout for the dsv_classic theme.
+ * A login page layout for the holicare_classic theme.
  *
- * @package   theme_dsv_classic
+ * @package   theme_holicare_classic
  * @copyright 2016 Damyon Wiese
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -29,8 +29,11 @@ $bodyattributes = $OUTPUT->body_attributes();
 $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
-    'bodyattributes' => $bodyattributes
+    'bodyattributes' => $bodyattributes,
+    'holicare' => $OUTPUT->image_url('images/holicare_logo', 'theme'),
+    'ec_logo' => $OUTPUT->image_url('images/ec_logo', 'theme'),
+    'spider_logo' => $OUTPUT->image_url('images/spider_logo', 'theme')
 ];
 
-echo $OUTPUT->render_from_template('theme_dsv_classic/login', $templatecontext);
+echo $OUTPUT->render_from_template('theme_holicare_classic/login', $templatecontext);
 

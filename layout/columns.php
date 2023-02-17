@@ -17,7 +17,7 @@
 /**
  * The columns layout for the classic theme.
  *
- * @package   theme_dsv_classic
+ * @package   theme_holicare_classic
  * @copyright 2018 Bas Brands
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -33,7 +33,7 @@ $hassidepost = $PAGE->blocks->region_has_content('side-post', $OUTPUT);
 $sitename = format_string($SITE->fullname, true, array('context' => context_course::instance(SITEID)));
 
 if ($PAGE->pagelayout == 'frontpage' || $PAGE->pagelayout == 'login') {
-	$theme = theme_config::load('dsv_classic');
+	$theme = theme_config::load('holicare_classic');
 	$fulllogo = html_writer::div(html_writer::empty_tag('img', [
 		'src' => $theme->setting_file_url('logo_en', 'logo_en'), 'alt' => $sitename, 'class' => 'img-fluid']), 'logo');
 }
@@ -53,5 +53,5 @@ if (isset($fulllogo)) {
     $templatecontext['hasfulllogo'] = true;
 }
 
-echo $OUTPUT->render_from_template('theme_dsv_classic/columns', $templatecontext);
+echo $OUTPUT->render_from_template('theme_holicare_classic/columns', $templatecontext);
 

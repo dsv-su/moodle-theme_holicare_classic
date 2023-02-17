@@ -17,7 +17,7 @@
 /**
  * A maintenance layout for the boost theme.
  *
- * @package   theme_dsv_classic
+ * @package   theme_holicare_classic
  * @copyright 2016 Damyon Wiese
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -31,4 +31,4 @@ $templatecontext = [
     'output' => $OUTPUT
 ];
 
-echo $OUTPUT->render_from_template('theme_dsv_classic/maintenance', $templatecontext);
+echo $OUTPUT->render_from_template('theme_holicare_classic/maintenance', $templatecontext);
