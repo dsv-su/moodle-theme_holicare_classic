@@ -1,3 +1,3 @@
 A new DSV theme that extends Moodle's standard Classic theme with a bit of customisation.
 
-Requires: Boost, Classic, Moodle 3.7.
+Requires: Boost, Classic, Moodle 4.
