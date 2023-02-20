@@ -1,21 +1,4 @@
 //HoliCare
-*,
-::before,
-::after {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  font-family: sans-serif;
-  min-height: 100vh;
-  line-height: 1.5;
-}
-
 a.login {
   color: white;
   padding-left: 10px;
