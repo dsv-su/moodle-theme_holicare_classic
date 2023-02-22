@@ -156,6 +156,19 @@
                                     </label>
                                 </fieldset>
                             </form>
+                            {{#hasinstructions}}
+                                <div class="signuppanel my-3">
+                                    <a class="expand login"><div><h3 class ="collapsed">Create a local Moodle account</h3></div></a>
+                                    <div class="subcontent create">
+                                        {{{instructions}}}
+                                        {{#cansignup}}
+                                            <form class="mt-3" action="{{signupurl}}" method="get" id="signup">
+                                                <button type="submit" class="btn btn-secondary">{{#str}}startsignup{{/str}}</button>
+                                            </form>
+                                        {{/cansignup}}
+                                    </div>
+                                </div>
+                            {{/hasinstructions}}
                         </div>
                     </div>
                 </div>
@@ -167,19 +180,7 @@
                         </div>
                 </div>
 
-                {{#hasinstructions}}
-                    <div class="signuppanel my-3">
-                        <a class="expand login"><div><h3 class ="collapsed">Create a local Moodle account</h3></div></a>
-                        <div class="subcontent create">
-                            {{{instructions}}}
-                            {{#cansignup}}
-                                <form class="mt-3" action="{{signupurl}}" method="get" id="signup">
-                                    <button type="submit" class="btn btn-secondary">{{#str}}startsignup{{/str}}</button>
-                                </form>
-                            {{/cansignup}}
-                        </div>
-                    </div>
-                {{/hasinstructions}}
+
                 </div>
             </div>
 
