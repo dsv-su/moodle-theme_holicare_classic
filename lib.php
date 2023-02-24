@@ -127,7 +127,7 @@ function theme_holicare_classic_get_extra_scss($theme) {
  */
 function theme_holicare_classic_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     if ($context->contextlevel == CONTEXT_SYSTEM && (strpos($filearea, 'backgroundimage') || strpos($filearea, 'logo') !== false )) {
-        $theme = theme_config::load('dsv_classic');
+        $theme = theme_config::load('holicare_classic');
         // By default, theme files must be cache-able by both browsers and proxies.
         if (!array_key_exists('cacheability', $options)) {
             $options['cacheability'] = 'public';
