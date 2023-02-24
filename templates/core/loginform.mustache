@@ -170,12 +170,11 @@
         </div>
     </div>
 
-
-<script>
-    function loginSubmit() {
-                document.getElementById("signup").submit();
-            }
-</script>
+ {{#js}}
+        function loginSubmit() {
+                    document.getElementById("signup").submit();
+                }
+ {{/js}}
  {{#js}}
     require(['jquery', 'core/yui'], function($, Y) {
     {{#error}}
