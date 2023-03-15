@@ -120,7 +120,7 @@
                                     <form action="{{signupurl}}" method="get" id="signup">
                                         <span class="not-yet">
                                             <p class="no-account">Don't have an account yet?</p>
-                                            <a onClick="loginSubmit()" class="login">Sign up</button>
+                                            <a href="#" id="loginbutton" class="login">Sign up</button>
                                         </span>
                                     </form>
                                     {{/cansignup}}
@@ -175,13 +175,13 @@
 
     </div>
 
- {{#js}}
-        function loginSubmit() {
-                    document.getElementById("signup").submit();
-                }
- {{/js}}
+
  {{#js}}
     require(['jquery', 'core/yui'], function($, Y) {
+     $('#loginbutton').click(function(){
+             document.getElementById("signup").submit();
+         });
+
     {{#error}}
         require(['jquery'], function($) {
             $('#loginerrormessage').focus();
