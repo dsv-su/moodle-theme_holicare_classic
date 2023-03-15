@@ -115,6 +115,9 @@
                             <div class="login-pane">
                                 <div class="container">
                                     <h2 class="log-in">Welcome Back!</h2>
+
+                                    {{#hasinstructions}}
+                                    {{{instructions}}}
                                     {{#cansignup}}
                                     <form action="{{signupurl}}" method="get" id="signup">
                                         <span class="not-yet">
@@ -123,6 +126,8 @@
                                         </span>
                                     </form>
                                     {{/cansignup}}
+                                    {{/hasinstructions}}
+
                                     <form action="{{loginurl}}" method="post" id="login">
                                         <input id="anchor" type="hidden" name="anchor" value="">
                                         <script>document.getElementById('anchor').value = location.hash;</script>
