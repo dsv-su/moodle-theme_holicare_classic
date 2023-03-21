@@ -1,8 +1,8 @@
 //HoliCare
 a.login {
   color: white;
-  padding-left: 40px;
-  font-size: 0.8rem;
+  /*padding-left: 40px;
+  font-size: 0.8rem;*/
 }
 
 form {
@@ -136,6 +136,10 @@ h2 {
   font-size: 0.8rem;
   display: flex;
   justify-content: flex-start;
+}
+
+.forgot-span a {
+  color: white;
 }
 
 #loginbtn {
