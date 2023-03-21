@@ -198,6 +198,15 @@ img {
   width: 50%;
 }
 
+.signupform {
+  width: 35%;
+  transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8); /* IE 9 */
+  -webkit-transform: scale(0.8, 0.8); /* Safari and Chrome */
+  -o-transform: scale(0.8, 0.8); /* Opera */
+  -moz-transform: scale(0.8, 0.8); /* Firefox */
+}
+
 @media (max-width: 1400px) {
   .not-yet {
     flex-wrap: wrap;
