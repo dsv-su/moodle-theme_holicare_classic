@@ -142,6 +142,7 @@ h2 {
   width: 100%;
   margin-top: 2rem;
   font-size: 1.5rem;
+  color: black !important;
   background-color: #feeb17;
   border: transparent;
   padding: 10px;
@@ -161,6 +162,11 @@ h2 {
   align-items: center;
   max-height: 100px;
   width: 100%;
+}
+
+.footer .icon {
+  width: 80px;
+  height: 80px;
 }
 
 .footer_firstpage {
