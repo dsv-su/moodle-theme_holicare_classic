@@ -31,7 +31,7 @@ $templatecontext = [
     'output' => $OUTPUT,
     'bodyattributes' => $bodyattributes,
     'holicare' => $OUTPUT->image_url('images/holicare_logo', 'theme'),
-    'ec_logo' => $OUTPUT->image_url('images/ec_logo', 'theme'),
+    'eu_logo' => $OUTPUT->image_url('images/eu_logo', 'theme'),
     'spider_logo' => $OUTPUT->image_url('images/spider_logo', 'theme'),
     'su_logo' => $OUTPUT->image_url('images/su_logo', 'theme')
 ];
