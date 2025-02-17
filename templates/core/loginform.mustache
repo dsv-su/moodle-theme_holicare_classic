@@ -134,18 +134,11 @@
                                                 <label for="user">Username:</label>
                                                  <input type="text" name="username" id="username"
                                                     class="form-control" value="{{username}}"
-                                                    placeholder={{#quote}}
-                                                    {{^canloginbyemail}}
-                                                    {{#str}}username{{/str}}
-                                                    {{/canloginbyemail}}
-                                                    {{#canloginbyemail}}{{#str}}usernameemail{{/str}}
-                                                    {{/canloginbyemail}}{{/quote}}
                                                     autocomplete="username">
 
                                                 <label for="password">Password:</label>
                                                 <input type="password" name="password" id="password" value=""
                                                     class="form-control"
-                                                    placeholder={{#quote}}{{#str}}password{{/str}}{{/quote}}
                                                     autocomplete="current-password">
                                             </fieldset>
                                             <span class="forgot-span">
